@@ -1,0 +1,29 @@
+{
+    "name": "terrarium/hello-world",
+    "description": "An example Terrarium addon that integrates with the Terrarium API.",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Thomas Erbe",
+            "email": "tom@tomerbe.co.uk"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Terrarium\\HelloWorld\\": "src/"
+        }
+    },
+    "extra": {
+        "terrarium": {
+            "name": "Hello World",
+            "author": "Terrarium",
+            "website": "https://github.com/VizuaaLOG/Terrarium-Hello-World",
+            "version": "1.0.0",
+            "description": "Hello World is proof of concept addon for the Terrarium plugin manager. It's integrating into the majority of systems Terrarium's core provides and is a way of testing that everything is installed and ready for other addons.",
+            "provider": "Terrarium\\HelloWorld\\HelloWorldServiceProvider"
+        }
+    }
+}
